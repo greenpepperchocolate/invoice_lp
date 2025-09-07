@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>サービス利用規約 | Invoice Converter AI</title>
+    <meta name="description" content="Invoice Converter AI のサービス利用規約" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- 同じフォント読み込み（必要に応じて） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ページ専用の軽い補助スタイル（既存デザインに沿う） */
+        .terms-hero {
+            padding-block: calc(100px + 40px) 32px;
+            background: #fff
+        }
+
+        .terms-hero h1 {
+            font-size: clamp(28px, 3.5vw, 36px);
+            font-weight: 900;
+            margin: 0
+        }
+
+        .terms-updated {
+            color: var(--text-muted);
+            margin-top: 8px;
+            font-size: 14px
+        }
+
+        .terms-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: var(--shadow-1);
+            padding: 32px;
+            margin: 20px 0;
+        }
+
+        .terms-card h2 {
+            font-size: 22px;
+            margin: 0 0 16px;
+            font-weight: 800;
+            color: var(--text);
+        }
+
+        .terms-card h3 {
+            font-size: 18px;
+            margin: 24px 0 12px;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .terms-card p {
+            margin: 12px 0;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .terms-card ol {
+            padding-left: 1.2rem;
+            margin: 12px 0
+        }
+
+        .terms-card ul {
+            padding-left: 1.2rem;
+            margin: 12px 0
+        }
+
+        .terms-card li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .terms-version {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 24px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .terms-footer {
+            margin-top: 32px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .example-pricing {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .example-pricing h4 {
+            color: #059669;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .contact-info {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+
+        .contact-info h3 {
+            color: #1d4ed8;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 共通ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Invoice Converter AI</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html#features">機能</a>
+                <a href="index.html#pricing">料金</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="https://invoice-converter-4ang.onrender.com/" class="btn-primary">無料で始める</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ページ見出し -->
+    <section class="terms-hero">
+        <div class="container">
+            <h1>Invoice Converter AI　サービス利用規約</h1>
+            <p class="terms-updated">最終更新日：2025年9月1日</p>
+        </div>
+    </section>
+
+    <!-- 本文 -->
+    <section>
+        <div class="container">
+            <div class="terms-card">
+                <h2>第1条（利用規約の適用）</h2>
+                <p>本利用規約（以下「本規約」といいます。）は、AI Works（以下「当社」といいます。）が提供する、PDF請求書から明細を含む各種項目をAIで抽出・編集し、CSV等の形式で出力できるサービス（以下「本サービス」といいます。）の利用に関し、当社と本サービスの利用者（以下「利用者」といいます。）との間に適用されます。</p>
+                <p>当社が本サービスに関して別途定め又は通知・表示する諸規定（料金表、ヘルプ、ガイド、プライバシーポリシー等）は本規約の一部を構成します。これらと本規約が抵触する場合は、当該諸規定が優先します。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第2条（定義）</h2>
+                <p>本規約における用語の定義は、次の各号のとおりとします。</p>
+                <ol>
+                    <li>「利用契約」：本規約を内容とする当社と利用者との契約</li>
+                    <li>「利用者アカウント」：本サービス利用のために作成される利用者固有の識別情報</li>
+                    <li>「利用コンテンツ」：利用者が本サービスにアップロードするPDFその他のファイル</li>
+                    <li>「出力データ」：本サービスによって生成されるCSVその他の形式のデータ</li>
+                </ol>
+            </div>
+
+            <div class="terms-card">
+                <h2>第3条（本サービスの内容・制限事項）</h2>
+                <p>本サービスは、利用者がアップロードしたPDF請求書等から、品目・数量・単価・金額等の項目を抽出し、CSV等の形式で出力する機能を提供します。</p>
+                <p>抽出はAI/OCR/規則等を組み合わせて行われ、正確性を保証するものではございません。利用者は、出力データを使用する前に自ら内容を確認・修正する責任を負います。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第4条（規約の変更）</h2>
+                <p>当社は、以下の各号のいずれかに該当する場合は、民法第548条の4の規定に基づき本規約を随時変更することができるものとします。</p>
+                <ol>
+                    <li>本規約の変更が、利用者の一般の利益に適合するとき</li>
+                    <li>本規約の変更が、契約をした目的に反せず、かつ、変更の必要性、変更後の内容の相
+                    当性及びその内容その他の変更に係る事情に照らして合理的なものであるとき</li>
+                <p>変更後の効力発生日、内容は、Webサイト上の表示その他当社所定の方法で周知します。周知後に利用者が本サービスを利用した場合又は当社所定期間内に解約手続がない場合、変更に同意したものとみなします。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第5条（サービス内容の変更・停止・廃止）</h2>
+                <p>当社は、事前通知の有無にかかわらず、サービスの全部又は一部の内容変更・機能追加・提供方法の変更を行うことができます。</p>
+                <p>当社は、保守・障害・法令対応・外部サービスの停止等により、本サービスの提供を一時的又は恒久的に停止・廃止することができます。これにより利用者に生じた損害について、当社は責任を負いません。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第6条（利用契約の成立）</h2>
+                <p>利用契約は、利用者が本規約に同意の上、当社所定の方法で利用申込みを行い、当社がこれを承諾したときに成立します。</p>
+                <p>当社は、承諾の可否を自由に決定でき、承諾しない場合の理由を開示する義務を負いません。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第7条（アカウント管理）</h2>
+                <p>利用者は、自己のアカウント情報（ID・パスワード等）を適切に管理し、第三者による不正使用の防止に努めなければなりません。</p>
+                <p>アカウントの不正使用により生じた損害は利用者の負担とし、当社は責任を負いません。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第8条（料金・支払）</h2>
+                <p>料金・プランは管理画面又はサイト上に表示する内容となります。</p>
+                
+                <ul>
+                    <li><strong>Free：</strong>月5回まで</li>
+                    <li><strong>無制限プラン：</strong>月額1,500円（税込）／フェアユース上限あり（例：月当たり処理件数に上限を設け、著しく超過する利用には一時制限又は従量課金を適用）</li>
+                </ul>
+
+                <p>料金は前払い・自動更新とし、課金サイクル中の解約に伴う日割・返金は行いません（法令で返金が義務付けられる場合を除く）。</p>
+                <p>外部決済事業者の都合により請求・決済時期等が前後する場合があります。振込手数料その他付随費用は利用者負担とします。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第9条（データ取扱い・保存）</h2>
+                <p>当社は、本サービス提供の目的の範囲で、利用コンテンツ及び出力データを処理します。</p>
+                <p>当社は、自動削除の方針（所定期間経過後の自動削除）を定めており、利用者は当該方針を承諾するものとします。ただし、法令上保存が義務付けられる場合又は紛争解決のため必要な場合は、この限りではありません。</p>
+                <p>利用者は必要に応じて自己の責任において出力データの保存・バックアップを行ってください。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第10条（第三者サービス）</h2>
+                <p>本サービスは、AI処理・決済・認証等において第三者の提供するサービスを利用する場合があります。利用者は、これら第三者サービスの利用条件にも従わなければなりません。</p>
+                <p>第三者サービスの変更・停止等により本サービスの全部又は一部に影響が生じても、当社は責任を負いません。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第11条（禁止事項）</h2>
+                <p>利用者は、以下の各号に該当する行為を行ってはなりません。</p>
+                <ol>
+                    <li>法令又は公序良俗に反する行為、犯罪行為、他者の権利侵害</li>
+                    <li>不正アクセス、リバースエンジニアリング、過度の負荷・スクレイピング、スパム</li>
+                    <li>本サービス又は第三者サービスの利用条件に反する行為（無料枠回避のための複数アカウント運用やAPIキーの共有・譲渡を含む）</li>
+                    <li>事実に反する情報の提供、当社又は本サービスの信用を毀損する行為</li>
+                    <li>当社の事前承諾なき再販・再提供・競業サービスの構築</li>
+                    <li>反社会的勢力への利益供与その他本規約に反する行為</li>
+                    <li>その他当社が不適当と判断する行為</li>
+                </ol>
+            </div>
+
+            <div class="terms-card">
+                <h2>第12条（アカウント停止・契約解除）</h2>
+                <p>当社は、利用者が本規約に違反した場合、料金滞納その他当社が不適切と判断する場合、事前通知なくアカウント停止・利用制限・契約解除を行うことができます。</p>
+                <p>利用者は、当社所定の方法により利用契約を解約できます。解約後も、未払債務・損害賠償債務等は存続します。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第13条（知的財産権）</h2>
+                <p>本サービス及び関連する知的財産権は当社又は正当な権利者に帰属します。本規約は、これらに関するライセンス供与を意味しません。</p>
+                <p>利用者は、利用コンテンツについて必要な権利を有することを表明・保証し、第三者の権利侵害に関する一切の責任を負います。</p>
+                <p>当社は、本サービス改善等のため、利用コンテンツ及び出力データについて統計処理・機械学習等の処理を行うことができます。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第14条（保証の否認・免責）</h2>
+                <p>当社は、本サービスの完全性・正確性・最新性・有用性・特定目的適合性を明示黙示を問わず保証しません。抽出結果は原資料・事実と齟齬を生じ得ます。</p>
+                <p>本サービスの利用に関連して利用者に生じた損害について、当社に故意又は重過失がある場合を除き、当社の賠償責任は、直近1か月分の月額料金相当額を上限とします。間接損害・特別損害・逸失利益は賠償対象外とします。</p>
+                <p>不可抗力、外部サービスの障害・変更、ネットワーク障害、セキュリティ事故（当社の合理的な対策にもかかわらず生じたもの）等により生じた損害について、当社は責任を負いません。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第15条（損害賠償・違約金）</h2>
+                <p>利用者が本規約違反により当社に損害を与えた場合、当社は通常損害のほか、合理的な弁護士費用等の回収に要した費用の賠償を請求できます。</p>
+                <p>重大な規約違反の場合、当社は違約金（月額料金の3か月分相当額等）を請求できるものとします。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第16条（秘密保持）</h2>
+                <p>当社及び利用者は、相手方から開示された秘密情報について、本サービス提供・利用以外の目的での使用を禁止し、第三者への開示を行ってはなりません。</p>
+                <p>ただし、法令に基づく開示義務がある場合、相手方の書面による事前承諾がある場合は、この限りではありません。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第17条（個人情報保護）</h2>
+                <p>当社の個人情報の取扱いは、別途定める<a href="privacy.html">プライバシーポリシー</a>によります。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第18条（反社会的勢力の排除）</h2>
+                <p>当社及び利用者は、自己が反社会的勢力でないこと、反社会的勢力との関係がないことを表明・保証します。</p>
+                <p>この表明・保証に違反が判明した場合、相手方は催告なく利用契約を解除できるものとします。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第19条（地位の譲渡禁止）</h2>
+                <p>利用者は、当社の書面による事前承諾なく、利用契約上の地位又は権利義務を第三者に譲渡・移転・担保設定できません。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第20条（分離可能性）</h2>
+                <p>本規約の一部が無効・取消しとなっても、その他の規定は有効に存続します。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第21条（存続条項）</h2>
+                <p>解約・終了後も、免責、損害賠償、秘密保持、個人情報、反社排除、地位の譲渡禁止、準拠法・管轄等の規定は存続します。</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>第22条（準拠法・管轄）</h2>
+                <p>本規約は日本法に準拠します。</p>
+                <p>本サービスに関して当社と利用者間で紛争が生じた場合、東京地方裁判所又は東京簡易裁判所を第一審の専属的合意管轄裁判所とします。</p>
+            </div>
+
+  
+            <div class="terms-card">
+                <h2>附則</h2>
+                <p><strong>施行日：</strong>2025年9月1日</p>
+            </div>
+
+            <p style="margin-top:24px;color:var(--text-muted)">© 2025 AI-Works</p>
+        </div>
+    </section>
+
+    <!-- 共通フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Invoice Converter AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
