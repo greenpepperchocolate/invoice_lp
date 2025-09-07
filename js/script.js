@@ -194,9 +194,21 @@
   }
 
   // =====================
+  // Force scroll to top on page load
+  // =====================
+  function forceScrollToTop() {
+    window.scrollTo(0, 0);
+    // Also reset browser scroll restoration
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+  }
+
+  // =====================
   // Init on DOM ready
   // =====================
   function init() {
+    forceScrollToTop();
     initFAQ();
     initSmoothScroll();
     initHeaderScroll();
@@ -205,6 +217,17 @@
     initLazyImages();
     initScrollDepth();
   }
+
+  // ページロード時とリロード時の両方でトップに戻る
+  window.addEventListener('beforeunload', function() {
+    window.scrollTo(0, 0);
+  });
+  
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 50);
+  });
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

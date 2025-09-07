@@ -513,6 +513,39 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // 即座にトップに固定（スムーズスクロール無効）
+        window.onbeforeunload = function () {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        }
+        
+        // ページの最初から強制的にトップに
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        
+        if (window.performance && window.performance.navigation.type === 1) {
+            // リロードの場合 - 即座に実行
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        });
+        
+        // CSS scroll-behaviorを一時的に無効化
+        document.documentElement.style.scrollBehavior = 'auto';
+        window.addEventListener('load', function() {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            // ロード完了後にスムーズスクロールを有効化
+            setTimeout(function() {
+                document.documentElement.style.scrollBehavior = 'smooth';
+            }, 100);
+        });
+    </script>
 </body>
 
 </html>
